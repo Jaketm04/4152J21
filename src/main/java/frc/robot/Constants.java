@@ -14,11 +14,25 @@ import edu.wpi.first.wpilibj.GenericHID.Hand;
  * <p>It is advised to statically import this class (or one of its inner classes) wherever the
  * constants are needed, to reduce verbosity.
  */
-public final class Constants {
-    public static class Controls{
+    public final class Constants {
+    
+     public static class Controls {
         //Drive controls
         public static final Hand DRIVE = Hand.kLeft;
-    }//end of Controls class
+        public static final int RUN_INTAKE_FWD = Button.kBumperRight.value;
+        public static final int RUN_INTAKE_RVS = Button.kBumperLeft.value;
+        public static final int TOGGLE_INTAKE_RAISED = Button.kX.value;
+        public static final int TOGGLE_BALL_GATE = Button.kB.value;
+        public static final int SHOOT_BALL = Button.kA.value;
+        public static final int SHOOT_BALL_MANUAL = 7;
+
+        // Operator controls:
+        public static final Hand ROTATE_TURRET = Hand.kright;
+        public static final int TOGGLE_LIMELIGHT_ZOOM = Button.kB.value;
+        public static final int INC_RPM_OFFSET = Button.kBumperRight.value;
+        public static final int DEC_RPM_OFFSET = Button.kBumperLeft.value;
+        }//end of Controls class
+    
     //USB ids
     public static final int DRIVER = 0;
 
